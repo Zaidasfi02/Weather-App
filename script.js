@@ -1,9 +1,9 @@
-let tempCelsius = null;
+let tempCelsius = null; // Store temperature in Celsius
 let isCelsius = true; // Toggle state
 
 document.getElementById("searchBtn").addEventListener("click", () => {
   const city = document.getElementById("cityInput").value;
-  const apiKey = "3bd28d5ddedac484d33d74f65518854a";
+  const apiKey = "3bd28d5ddedac484d33d74f65518854a"; // Replace with your API key
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
   fetch(url)
@@ -43,19 +43,26 @@ function changeBackground(weather) {
   let backgroundImage = "";
 
   if (weather === "Clear") {
-    backgroundImage = "/images/sunny.png";
+    backgroundImage =
+      "https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg"; // Sunny
   } else if (weather === "Clouds") {
-    backgroundImage = "/images/cloudy.jpg";
+    backgroundImage =
+      "https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg"; // Cloudy
   } else if (weather === "Rain") {
-    backgroundImage = "/images/rainy.jpg";
+    backgroundImage =
+      "https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg"; // Rainy
   } else if (weather === "Snow") {
-    backgroundImage = "/images/snowy.jpg";
+    backgroundImage =
+      "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg"; // Snowy
   } else if (weather === "Thunderstorm") {
-    backgroundImage = "/images/thunderStorm.jpg";
+    backgroundImage =
+      "https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg"; // Thunderstorm
   } else if (weather === "Mist" || weather === "Fog") {
-    backgroundImage = "/images/foggy.jpg";
+    backgroundImage =
+      "https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg"; // Foggy
   } else {
-    backgroundImage = "/images/default.jpg";
+    backgroundImage =
+      "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg"; // Default
   }
 
   // Apply styling background image
