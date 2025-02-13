@@ -44,7 +44,7 @@ function changeBackground(weather) {
 
   if (weather === "Clear") {
     backgroundImage =
-      "https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg"; // Sunny
+      "/images/sunny.jpg.png"; // Sunny
   } else if (weather === "Clouds") {
     backgroundImage =
       "https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg"; // Cloudy
